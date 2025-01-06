@@ -32,6 +32,8 @@
             btn_jogar = new Button();
             lbl_num2 = new Label();
             lbl_num3 = new Label();
+            label1 = new Label();
+            lbl_saldo = new Label();
             SuspendLayout();
             // 
             // lbl_num1
@@ -75,11 +77,33 @@
             lbl_num3.TabIndex = 4;
             lbl_num3.Text = "-";
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 15F);
+            label1.Location = new Point(559, 37);
+            label1.Name = "label1";
+            label1.Size = new Size(82, 35);
+            label1.TabIndex = 5;
+            label1.Text = "Saldo:";
+            // 
+            // lbl_saldo
+            // 
+            lbl_saldo.AutoSize = true;
+            lbl_saldo.Font = new Font("Segoe UI", 15F);
+            lbl_saldo.Location = new Point(647, 37);
+            lbl_saldo.Name = "lbl_saldo";
+            lbl_saldo.Size = new Size(67, 35);
+            lbl_saldo.TabIndex = 7;
+            lbl_saldo.Text = "1000";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(lbl_saldo);
+            Controls.Add(label1);
             Controls.Add(lbl_num3);
             Controls.Add(lbl_num2);
             Controls.Add(btn_jogar);
@@ -96,5 +120,7 @@
         private Button btn_jogar;
         private Label lbl_num2;
         private Label lbl_num3;
+        private Label label1;
+        private Label lbl_saldo;
     }
 }
